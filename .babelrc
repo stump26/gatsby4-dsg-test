@@ -1,0 +1,21 @@
+{
+  "presets": ["@babel/env","gatsby-package"],
+  "plugins": [
+    [
+      "babel-plugin-tsconfig-paths",
+      {
+        "relative": true,
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx",
+          ".es",
+          ".es6",
+          ".mjs"
+        ],
+        "tsconfig": "tsconfig.json"
+      }
+    ]
+  ]
+}

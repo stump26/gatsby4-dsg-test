@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "gatsby4-dsg-test",
+    siteUrl: `https://gatsby4-dsg-test.gatsbyjs.io/`, // 임의 url
   },
   plugins: [
     "gatsby-plugin-emotion",

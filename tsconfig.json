@@ -11,8 +11,12 @@
     "downlevelIteration": true,
     "jsx": "react-jsx",
     "baseUrl": ".",
+    "paths": {
+      "~/*": ["src/*"]
+    }
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "gatsby/*"
   ]
 }
