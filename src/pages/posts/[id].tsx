@@ -1,8 +1,15 @@
 import React from "react";
+
 import Post from "~/component/Post";
 import { genIdenticon } from '~/utils/hashAndAvatarGenerator'
 
-const PostTemplate = (props: any) => {
+import type { PostProps } from "~/component/Post";
+
+interface IServerProps {
+  serverData:PostProps
+}
+
+const PostTemplate = (props: IServerProps) => {
   return <Post {...props.serverData} />;
 };
 

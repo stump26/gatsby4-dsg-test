@@ -1,18 +1,11 @@
 import React from "react";
 import Post from "~/component/Post";
 
-interface postProps {
-  location: object;
-  navigate: Function;
-  pageContext: {
-    id: string;
-    identicon: string;
-  };
-  pageResources: object;
-  params: object;
-  path: string;
-  uri: string;
-  key?: any;
+import type { PageProps } from 'gatsby/index'
+import type { PostProps }  from "~/component/Post";
+
+interface postProps extends PageProps {
+  pageContext: PostProps
 }
 
 const PostTemplate: React.FC<postProps> = (props) => {

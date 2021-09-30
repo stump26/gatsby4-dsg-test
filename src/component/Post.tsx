@@ -1,11 +1,11 @@
 import styled from "@emotion/styled";
 
-interface Props {
+export interface PostProps {
   id: string;
   identicon: string;
 }
 
-const Post = ({ id, identicon }: Props) => {
+const Post = ({ id, identicon }: PostProps) => {
   const icon = `data:image/png;base64,${identicon}`;
 
   return (
